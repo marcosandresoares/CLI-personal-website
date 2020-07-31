@@ -1,0 +1,33 @@
+{
+  "name": "CLI-Personal-Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://marcosandresoares.github.io/CLI-personal-website",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bulma": "^0.9.0",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/runtime-corejs2": "^7.10.5",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  }
+}
